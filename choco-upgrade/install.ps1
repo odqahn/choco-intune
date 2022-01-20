@@ -1,7 +1,7 @@
 $PackageName = "choco-upgrade"
 
-$Path_4netIntune = "$Env:Programfiles\4net\EndpointManager"
-Start-Transcript -Path "$Path_4netIntune\Log\$PackageName-install.log" -Force
+$logs = "$Env:Programfiles\Agaru\EndpointManager"
+Start-Transcript -Path "$logs\Log\$PackageName-install.log" -Force
 
 # Check choco.exe 
 $localprograms = C:\ProgramData\chocolatey\choco.exe list --localonly
